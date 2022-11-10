@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    .nav-link {
+      display: block;
+      padding: .5rem 1rem;
+      color: #f8f9fa;
+      text-decoration: none;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+
+
+
+</style>
+
+    <title>tpi js</title>
+</head>
+<body>
+    <header>
+
+
+        <nav class="navbar navbar-light " style="background-color: rgb(82, 78, 78);">
+          <div class="container-fluid">
+            <div class="row col-12">
+              <div class="col-sm-6 col-md-4">
+                <a class="navbar-brand  text-light" href="#">
+                  <img src="./images/codoacodo.png" alt="codo a codoacodo" width="160" height="85"
+                    class="d-inline-block align-text-middle">
+                  Conf Ba As
+                </a>
+              </div>
+    
+              <div class="col-sm-6 col-md-8 align-self-center ">
+                <ul class="nav justify-content-end  ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#orador">Los Oradores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#lugar">El lugar y la fecha</a>
+                  </li>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#conviertete">Conviértete en Orador</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="#tickets" tabindex="-1" aria-disabled="true">Comprar Tickets</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+    
+      </header>
+
+
+
+      <main>
+
+        <!--Descuento por categorias-->
+
+
+        <section class="container">
+            
+            <div class="row d-flex justify-content-center text-center  pt-4">
+                
+            
+
+                    <div class="card border-primary mb-3 mx-2 " style="max-width: 18rem;">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Estudiante</h5>
+                          <p  class="fs-5">Tienen un descuento</p>
+                          <p class="fw-bold"> 80%</p>
+                          <p class="text-muted"> * presentar documentacion</p>
+                        </div>
+                      </div>
+
+
+
+                      <div class="card border-success mb-3 mx-2" style="max-width: 18rem;">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Trainee</h5>
+                          <p  class="fs-5">Tienen un descuento</p>
+                          <p class="fw-bold"> 50%</p>
+                          <p class="text-muted"> * presentar documentacion</p>
+                        </div>
+                      </div>
+
+
+                      <div class="card border-warning mb-3 mx-2" style="max-width: 18rem;">
+                        <div class="card-body text-dark">
+                          <h5 class="card-title">Junior</h5>
+                          <p  class="fs-5">Tienen un descuento</p>
+                          <p class="fw-bold"> 15%</p>
+                          <p class="text-muted"> * presentar documentacion</p>
+                        </div>
+                    </div>
+
+        </section>
+
+
+        <!--Valor de las Entradas-->
+
+
+        <section>
+
+            <div class="text-center">
+
+                <p class="fs-6"> VENTA</p>
+                <p class="fs-2   fw-bolder"> VALOR TICKET $200</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- formulario de Compra-->
+
+
+        <section class="container">
+            <form class="row  justify-content-center  mb-2">
+
+                <div class="col-sm-12  col-md-4 col-lg-5">
+                    <input class="form-control" type="text" placeholder="Nombre" aria-label="Nombre" required>
+                </div>
+        
+                <div class= "col-sm-12  col-md-4 col-lg-5">
+                    <input class="form-control" type="text" placeholder="Apellido" aria-label="Apellido" required>
+                </div>
+
+
+                <div class="col-sm-12  col-lg-8 col-lg-10 mt-2">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="usuario@example.com" required>
+                </div>
+
+
+        
+                <div class=" col-md-4 col-lg-5  mt-2">
+                    <label for="Cantidad"  id>Cantidad</label>
+                </div>
+        
+                <div class=" col-md-4 col-lg-5  mt-2">
+                    <label for="categoria">Categoria</label>
+                </div>
+        
+                <div class=" col-md-4 col-lg-5  mt-2">
+                    <input type="number" min="1" class="form-control" placeholder="Cantidad" aria-label="cantidad" id="cantidad"
+                        required>
+                </div>
+        
+                <div class=" col-md-4 col-lg-5  mt-2">
+                    <select class="form-select form-select-md" aria-label="Categoria" id="categoria">
+                        <option selected>Seleccione Categoria</option>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+        
+                <!--RESUMEN-->
+
+            <div class=" col-md-8 col-lg-10  mt-2" >
+
+
+                <div class="form-group alert alert-primary mt-2" role="alert">
+        
+                    <p> Total a Pagar $</p>
+        
+                </div>
+
+            </div>
+        
+
+
+
+                <div class="d-grid gap-2  col-sm-12  col-md-4 col-lg-5 py-1">
+                    <button   class="text-light  btn btn-primary  border-0" type="reset"
+                        style="background-color: #8BC34A;">Borrar</button>
+                </div>
+        
+                <div class="d-grid gap-2  col-sm-12  col-md-4 col-lg-5  py-1">
+                    <button class=" text-light  btn btn-primary border-0" type="submit"
+                        style="background-color: #8BC34A;" onclick="resumen ()">Resumen</button>
+                </div>
+
+            </form>
+        </section>
+
+
+
+
+
+<!--------------------------------------------------------------------------S-->
+            
+            
+
+      </main>
+
+
+        <footer class="container-fluid  p-4" style="background-color: rgb(16, 108, 124);">
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <ul class="nav justify-content-center  p2">
+                  <li class="nav-item">
+                    <a class="nav-link active " aria-current="page" href="#"> Preguntas Frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Contáctanos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  " href="#">Prensa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Conferencias</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link  " href="#">Términos y condiciones</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">Privacidad</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link   " href="#">Estudiantes</a>
+                  </li>
+                </ul>
+        
+              </div>
+        
+              <div class="col-xs-12">
+                <p class="text-center text-secondary"> 2022 Jose Higuera</p>
+        
+              </div>
+        
+            </div>
+          </footer>
+
+
+          <script src="./resumen.js"></script>
+    
+</body>
+</html>
